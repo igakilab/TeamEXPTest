@@ -3,6 +3,7 @@ Public Class frmDialog
 
 #Region " Windows フォーム デザイナで生成されたコード "
 
+
     Public Sub New()
         MyBase.New()
 
@@ -83,5 +84,17 @@ Public Class frmDialog
     End Sub
 
 #End Region
+
+    Public Property Value() As String
+        '参照
+        Get
+            rerutn textKey.Text
+        End Get
+
+        '更新
+        Set(ByVal value As String)
+
+        End Set
+    End Property
 
 End Class
